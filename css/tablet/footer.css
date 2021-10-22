@@ -32,14 +32,14 @@ footer>div.footerTop>div>dl.utilBtm>dd.sns>ul{
 footer>div.footerTop>div>dl.utilBtm>dd.sns>ul>li{}
 
 .footerBottom{
-    
 }
 .footerBottom img{
-    margin: 10px 10px;
-    width: 140px;
+    float: left;
+    margin: 10px 20px;
+    width: 120px;
 }
 .footerBottom p{
-    margin: 0 10px;
+    margin: 30px 10px;
     font: 12px/20px sans-serif;
 }
 /* 이벤트 */
@@ -47,7 +47,7 @@ footer>div.footerTop>div>dl.family.on{
     
 }
 footer>div.footerTop>div>dl.family.on>dt{
-    background: url(../../imgs/family_on.png)no-repeat 95% 50%;
+    background: url(../../img/family_on.png)no-repeat 95% 50%;
 }
 footer>div.footerTop>div>dl.family.on>dd{
     display: block;

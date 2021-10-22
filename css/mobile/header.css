@@ -30,7 +30,7 @@ header>div>h1>a>img{width: 100%;}
 header>div>p.m{
     margin: 24px 0 0 20px;
     width: 23px;height: 15px;
-    background: url(../../imgs/btn_gnb_mobile.png) no-repeat 0 0/contain;
+    background: url(../../img/btn_gnb_mobile.png) no-repeat 0 0/contain;
 }
 header>div>dl{float: right;}
 
@@ -82,7 +82,7 @@ header>div>nav>ul>li>ul>li>a{
     font-size: 14px; line-height: 43px;
 }
 header>div>nav>ul>li>ul>li.child{
-    background: url(../../imgs/bu_2depth_on.png) no-repeat 165px 50%;
+    background: url(../../img/bu_2depth_on.png) no-repeat 165px 50%;
 }
 header>div>nav>ul>li>ul>li>ul{
     display: none;
@@ -120,7 +120,7 @@ header>div>nav>ul>li>ul>li>ul>li>a::after{
     padding: 0;
     border-radius: 6px;
     width: 26px; height: 36px;
-    background: url(../../imgs/ic_search_m.png)no-repeat 50% 50%/contain; 
+    background: url(../../img/ic_search_m.png)no-repeat 50% 50%/contain; 
     text-align: left;
     color: #fff;
     text-indent:-99999px;
@@ -136,7 +136,7 @@ header>div.center>div#lang{
     width: 44px; height: 34px;
     text-align: center;
     font-size: 12px; line-height: 34px;/* letter-spacing: -1px; */
-    background: url(../../imgs/country_off.png) no-repeat 50% 90%;
+    background: url(../../img/country_off.png) no-repeat 50% 90%;
 }
 
 /* 이벤트 */

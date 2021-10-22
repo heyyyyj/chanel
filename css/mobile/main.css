@@ -159,13 +159,13 @@ div.contents>section.coNews>div>div.ctrl>p.btnPrev{
     position: absolute;
     left: 0;top: 0;
     width: 12px; height: 21px;
-    background: url(../../imgs/btn_main_news_left.png) no-repeat 0 0;
+    background: url(../../img/btn_main_news_left.png) no-repeat 0 0;
 }
 div.contents>section.coNews>div>div.ctrl>p.btnNext{
     position: absolute;
     right: 0;top: 0;
     width: 12px; height: 21px;
-    background: url(../../imgs/btn_main_news_right.png) no-repeat 0 0;
+    background: url(../../img/btn_main_news_right.png) no-repeat 0 0;
 }
 div.contents>section.coNews>div>div.ctrl>ul.paging{
     text-align: center;
@@ -175,10 +175,10 @@ div.contents>section.coNews>div>div.ctrl>ul.paging>li{
     vertical-align: middle;
     display: inline-block;
     width: 14px;height: 12px;
-    background: url(../../imgs/mainnews_indicator.png)no-repeat 50% 50%;
+    background: url(../../img/mainnews_indicator.png)no-repeat 50% 50%;
 }
 div.contents>section.coNews>div>div.ctrl>ul.paging>li.on{
-    background: url(../../imgs/mainnews_indicator_on.png)no-repeat 50% 50%;
+    background: url(../../img/mainnews_indicator_on.png)no-repeat 50% 50%;
 }
 
 div.contents>div.coInfo{
@@ -199,7 +199,7 @@ div.contents>div.coInfo>section>a>div{
     margin: 0 20px;
 }
 div.contents>div.coInfo>section>a>div>h1{
-    background: url(../../imgs/img_menu_more02.png)no-repeat 100% 50%;
+    background: url(../../img/img_menu_more02.png)no-repeat 100% 50%;
 }
 div.contents>div.coInfo>section>a>div>p.txt{
     height: 46px;
