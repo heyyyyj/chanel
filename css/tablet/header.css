@@ -1,0 +1,338 @@
+
+body{
+    overflow-y: hidden;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+header{
+    position: fixed;left: 0;top: 0;
+    z-index: 9999;
+    width:100%; height: 83px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(80,80,80,.5);
+    border-top: #000 8px solid;
+}
+/* .center{
+    margin: 0 auto;
+    width: 960px; height: 83px;
+} */
+.res{display: none;}
+@media only screen and (min-width:960px){
+    header>div{
+        margin: 0 auto;
+        width: 960px; height: 83px;
+    }
+    .res.siz{display: block;}
+    header>div>h1{margin: 21px 0 0 0;}
+    header>div>nav{
+        margin-left: 9px;
+        padding-top: 31px;
+    }
+    /* 네비게이터 */
+
+
+    header>div>nav>ul{
+        height: 52px;
+    }
+    header>div>nav>ul>li{
+        position: relative;
+        float: left;
+        margin: 0 27px;
+        height: 52px;
+    }
+    header>div>nav>ul>li>a{
+        display: block;
+        padding-bottom: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #222;
+    }
+    header>div>nav>ul>li>ul{
+        display: none;
+        position: absolute;
+        left: -25px; top: 52px;
+        width: 185px;
+        background: #000;
+    }
+    header>div>nav>ul>li>ul>li{
+        position: relative;
+        margin: 0 1px;
+        height: 43px;
+    }
+    header>div>nav>ul>li>ul>li>a{
+        display: block;
+        padding-left: 21px;
+        height: 43px;
+        color: #fff;
+        font-size: 14px; line-height: 43px;
+    }
+    header>div>nav>ul>li>ul>li.child{
+        background: url(../../imgs/bu_2depth_on.png) no-repeat 165px 50%;
+    }
+    header>div>nav>ul>li>ul>li>ul{
+        display: none;
+        position: absolute;left: 183px; top: 0;
+        width: 188px;
+        background: #fff;
+    }
+    header>div>nav>ul>li>ul>li>ul>li{
+        height: 34px;
+    }
+    header>div>nav>ul>li>ul>li>ul>li>a{
+        position: relative;
+        margin-left: 19px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 14px;
+    }
+    header>div>nav>ul>li>ul>li>ul>li>a::after{
+        position: absolute;
+        left: -10px;top: 50%;
+        content: "";
+        width: 4px;height: 0;border-top: 1px solid #2c3d45;
+    }
+
+    #srchBox{
+        margin-left: 55px;
+        position: relative;
+    }
+    #srchBox>button{
+        box-sizing: border-box;
+        border: 0 none;
+        margin-top: 22px;
+        padding: 0;
+        border-radius: 6px;
+        width: 91px; height: 36px;
+        background: #000 url(../../imgs/ic_search.png)no-repeat 64px 7px;
+        text-align: left;
+        color: #fff;
+        text-indent: 10px;
+        letter-spacing: -2px; line-height: 36px;
+    }
+    header>div.center>div#lang{
+        position: relative;
+        overflow: hidden;
+        float: right;
+        margin-top: 22px;
+        border: 1px solid #a9b0b8;
+        border-radius: 6px;
+        width: 44px; height: 34px;
+        text-align: center;
+        font-size: 11px; line-height: 34px;/* letter-spacing: -1px; */
+        background: url(../../imgs/country_off.png) no-repeat 50% 90%;
+    }
+}
+@media only screen and (max-width:959px){
+    .res.t{display: block;}
+    header{height: 60px;}
+    header>div{
+        height: 60px;
+    }
+    .res.siz{display: none;}
+    header>div>h1{
+        position: absolute;
+        left: calc(50% - 53px);
+        top: calc(50% - 2px);
+        width: 107px; height: 16px;}
+    header>div>p.t{
+        margin: 24px 0 0 20px;
+        width: 23px;height: 15px;
+        background: url(../../imgs/btn_gnb_mobile.png) no-repeat 0 0/contain;
+    }
+    
+    /* 네비게이터 */
+    header>div>nav{
+        position: fixed; z-index: 9999;
+        left: 0;top: 0;
+    }
+
+    header>div>nav>ul{
+        width: 220px;height: 100vh;background: #000;
+    }
+    header>div>nav>ul>li{
+        position: relative;
+        top: 30px;
+        margin: 0 60px 0 20px;
+        height: 52px;
+    }
+
+    header>div>nav>ul>li>a{
+        display: block;
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+    }
+    header>div>nav>ul>li>ul{
+        display: none;
+        position: absolute;
+        left: 140px; top: 0;
+        width: 185px;
+        background: #fff;
+    }
+    header>div>nav>ul>li>ul>li{
+        position: relative;
+        margin: 0 1px;
+        height: 43px;
+    }
+    header>div>nav>ul>li>ul>li:last-child{
+    }
+    header>div>nav>ul>li>ul>li>a{
+        display: block;
+        padding-left: 21px;
+        height: 43px;
+        color: #000;
+        font-size: 14px; line-height: 43px;
+    }
+    header>div>nav>ul>li>ul>li.child{
+        background: url(../../imgs/bu_2depth_on.png) no-repeat 165px 50%;
+    }
+    header>div>nav>ul>li>ul>li>ul{
+        display: none;
+        position: absolute;left: 183px; top: -1px;
+        width: 188px;
+        background: #fff;
+    }
+    header>div>nav>ul>li>ul>li>ul>li{
+        height: 34px;
+    }
+    header>div>nav>ul>li>ul>li>ul>li>a{
+        position: relative;
+        margin-left: 19px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 14px;
+    }
+    header>div>nav>ul>li>ul>li>ul>li>a::after{
+        position: absolute;
+        left: -10px;top: 50%;
+        content: "";
+        width: 4px;height: 0;border-top: 1px solid #2c3d45;
+    }
+
+    
+    #srchBox{
+        float: right;
+        padding-right: 55px;
+        position: relative;
+    }
+    #srchBox>button{
+        box-sizing: border-box;
+        border: 0 none;
+        margin-top: 12px;
+        padding: 0;
+        border-radius: 6px;
+        width: 26px; height: 36px;
+        background: url(../../imgs/ic_search_m.png)no-repeat 50% 50%/contain; 
+        text-align: left;
+        color: #fff;
+        text-indent:-99999px;
+        letter-spacing: -2px;
+        font-size:0;line-height: 0;
+    }
+    header>div.center>div#lang{
+        position: absolute;
+        right: 0;top: calc(50% - 17px);
+        overflow: hidden;
+        border: 1px solid #a9b0b8;
+        border-radius: 6px;
+        width: 44px; height: 34px;
+        text-align: center;
+        font-size: 12px; line-height: 34px;/* letter-spacing: -1px; */
+        background: url(../../imgs/country_off.png) no-repeat 50% 90%;
+    }
+}
+/*Mediaquery end*/
+
+
+header>div>*{float: left;}
+header>div>dl{float: right;}
+
+header>div>h1>a{
+    display: block;
+}
+header>div>h1>a>img{
+    margin-top: -14px;
+    width: 100%;
+}
+
+/* 이벤트 */
+header>div>nav>ul>li:hover>ul{
+    display: block;
+}
+header>div>nav>ul>li>ul>li:hover{
+    background: #000;
+}
+header>div>nav>ul>li>ul>li.child:hover{
+    margin-right: 0;
+    background: #000 url(../../imgs/bu_2depth_on.png)no-repeat 165px 50%;
+}
+header>div>nav>ul>li>ul>li:hover>a{
+    color: #fff;
+}
+header>div>nav>ul>li>ul>li:hover>ul{
+    display: block; z-index: -1;
+}
+header>div>nav>ul>li>ul>li>ul>li:hover{
+    background: #000;
+}
+header>div>nav>ul>li>ul>li>ul>li:hover>a{
+    color: #fff;
+}
+
+#srchBox:hover>form{
+    display: block;
+}
+
+
+#srchBox>form{
+    display: none;
+    position: absolute;
+    right: -51px;top: 60px; /* right값은 강사님이랑 차이 있음(-48px) */
+    width: 320px; height: 50px; background: #424c51;
+}
+#srchBox>form>input[type="search"]{
+    float: left; margin: 16px 0 0 20px; border: 0 none; outline: 0 none;
+    width: 220px; height: 17px; background: #424c51; 
+}
+#srchBox>form>input[type="search"]::placeholder{
+    color: #ebebeb;
+}
+#srchBox>form>input[type="image"]{
+    float: left; margin: 13px 0 0 6px; border: 0 none;
+}
+#srchBox>form>p.close{
+    position: relative;
+    float: right;
+    margin: 18px 13px 0 0;
+}
+#srchBox>form>p.close::after{
+    position: absolute; left: -13px; top: -8px;
+    content: "";
+    width: 0; height: 30px; border-left: 1px solid #858f9a;
+}
+
+header>div.center>div#lang.on{
+    background: url(../../imgs/country_on.png)no-repeat 50% 90%;
+}
+header>div.center>div#lang>dl{
+    position: absolute;
+    width: 44px; left: -1px; top: -1px;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid #a9b0b8;
+    bottom: 0 none;
+}
+header>div.center>div#lang>dl>dd:first-of-type{
+    border-radius: 6px 6px 0 0;
+}
+header>div.center>div#lang>dl>dd{
+    height: 34px;
+    border-bottom: 1px solid #a9b0b8;
+    background: #fff;
+}
+/* border-bottom주지말고, 언어선택창 클릭시 2,3번째 dd는 
+   absolute로 첫번째 dd를 2px정도 덮으며 띄울 수 있게 해야될 듯 */
+header>div.center>div#lang>dl>dd.on{
+    font-weight: bold;
+    background: none;
+}

@@ -1,0 +1,284 @@
+main{}
+@media only screen and (min-width:960px){
+    main>aside{
+        margin-top: 83px;
+        text-align: center;
+        font-size: 0; line-height: 0;
+        background: #dbdbdb;
+    }
+}
+@media only screen and (max-width:959px){
+    main>aside{
+        margin-top: 60px;
+        text-align: center;
+        font-size: 0; line-height: 0;
+        background: #dbdbdb;
+    }
+}
+
+main>aside>video{
+    width: 100%;
+}
+main>div{
+    position: relative;
+}
+.theme{margin-bottom: 20px;}
+.theme>ul{
+    display: flex;
+}
+.theme>ul>li{
+    overflow: hidden;
+    flex: 0 0 25%; width: 25%;
+}/* flex: 0 0 25% = flex: 0 1 300px로 해줘도 됨*/
+.theme>ul>li>a{
+    position: relative;
+    display: block;
+}
+.theme>ul>li>a>img{
+    width: 100%;
+    vertical-align: top;
+}
+.theme>ul>li>a>img:nth-child(2){
+    opacity: 0;
+    transition: all .5s ease;
+}
+.theme>ul.themeList>li>a>img:nth-child(3){
+    bottom: 0; right: -30px;
+    height: 65%;
+    transition: all .5s ease;
+}
+.theme>ul>li>a>img:not(:first-child){
+    position: absolute;
+    right: 0; bottom: 0;
+}
+.theme>ul:nth-child(1)>li>a>img:last-child{
+    width: auto;
+}
+.theme>ul:nth-child(2)>li>a>img:last-child{
+    width: auto;
+}
+.theme>ul:nth-child(3)>li>a>img:last-child{
+    width: auto;
+}
+.theme>ul:nth-child(4)>li>a>img:last-child{
+    width: auto;
+}
+
+/* 이벤트 */
+.theme>ul>li:hover>a>img:nth-child(2){
+    opacity:1;
+}
+.theme>ul>li:hover>a>img:nth-child(3){
+    right: 0;
+}
+
+
+
+
+/* News */
+div.contents{
+    position: relative;
+    padding: 0 15px;
+}
+div.contents h1{
+    font: 26px/64px 'Malgun gothic',sans-serif;
+    color: #000;
+}
+div.contents b{
+    width: 57px;height: 19px;
+    border: 1px solid#e64186;
+    text-align: center;
+    font: 12px/19px "dotum",sans-serif;
+    color: #e64186;
+}
+div.contents .board{
+
+}
+div.contents .news{
+    border-color: #000; color: #000;
+}
+div.contents>section.coNews{
+    overflow: hidden;
+    margin-bottom: 41px;
+    border-top: 2px solid#000;
+}
+div.contents>section.coNews>h1{
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e1e1e1;
+}
+div.contents>section.coNews>dl{
+    float: left;
+    margin-right: 10px;
+    width: calc(50% - 10px);
+}
+div.contents>section.coNews>dl>dt{
+    margin-bottom: 27px;
+}
+div.contents>section.coNews>dl>dt>b{
+    display: block;
+    margin: 20px 0 16px 0;
+    font: 12px/19px "dotum",sans-serif;
+}
+div.contents>section.coNews>dl>dt>a{
+    display: block;
+    margin-bottom: 10px;
+    font: 18px/26px 'Malgun Gothic',sans-serif;
+    color: #222;
+}
+div.contents>section.coNews>dl>dt>time{
+    font: 14px/14px 'dotum',sans-serif;
+    color: #666
+}
+div.contents>section.coNews>dl>dd{
+    font: 14px/22px "dotum",sans-serif;
+    color: #333;
+}
+div.contents>section.coNews>div{
+    float: right;
+    margin-left: 10px;
+    width: calc(50% - 10px);
+}
+div.contents>section.coNews>div>div.banner{
+    overflow: hidden;
+}
+div.contents>section.coNews>div>div.banner>div.bannerList{
+    display: flex;
+    position: relative;
+    width: 300%;
+
+}
+div.contents>section.coNews>div>div.banner>div.bannerList>ul{
+    flex: 0 1 33.33333%; width: 33.333333%;
+    border-bottom: 1px solid #e1e1e1;
+}
+div.contents>section.coNews>div>div.banner>div.bannerList>ul>li{
+    display: flex; align-items: center;
+    height: 60px; border-top: 1px solid #e1e1e1;
+}
+div.contents>section.coNews>div>div.banner>div.bannerList>ul>li>b{
+    flex: 0 0 57px; width: 57px;
+}
+div.contents>section.coNews>div>div.banner>div.bannerList>ul>li>a{
+    flex: 0 1 auto;
+    display: block; padding: 0 20px 0 5px;
+    overflow: hidden;white-space: nowrap;
+    text-overflow: ellipsis;
+    font: 14px/60px 'Malgun Gothic',sans-serif;
+    color: #222;
+}
+div.contents>section.coNews>div>div.banner>div.bannerList>ul>li>time{
+    flex: 0 0 63px;
+    margin-left: auto;
+    width: 63px;
+    font: 13px/13px 'Malgun Gothic',sans-serif;
+}
+div.contents>section.coNews>div>div.ctrl{
+    position: relative;
+    margin-top: 18px; height: 21px;
+}
+div.contents>section.coNews>div>div.ctrl>p.btnPrev{
+    position: absolute;
+    left: 0;top: 0;
+    width: 12px; height: 21px;
+    background: url(../../imgs/btn_main_news_left.png) no-repeat 0 0;
+}
+div.contents>section.coNews>div>div.ctrl>p.btnNext{
+    position: absolute;
+    right: 0;top: 0;
+    width: 12px; height: 21px;
+    background: url(../../imgs/btn_main_news_right.png) no-repeat 0 0;
+}
+div.contents>section.coNews>div>div.ctrl>ul.paging{
+    text-align: center;
+    height: 21px;
+}
+div.contents>section.coNews>div>div.ctrl>ul.paging>li{
+    vertical-align: middle;
+    display: inline-block;
+    width: 14px;height: 12px;
+    background: url(../../imgs/mainnews_indicator.png)no-repeat 50% 50%;
+}
+div.contents>section.coNews>div>div.ctrl>ul.paging>li.on{
+    background: url(../../imgs/mainnews_indicator_on.png)no-repeat 50% 50%;
+}
+
+div.contents>div.coInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.contents>div.coInfo>section{
+    flex: 0 1 auto;
+    margin-bottom: 30px;
+    width: calc(50% - 10px);
+    border-top: 2px solid #000;
+}
+div.contents>div.coInfo>section:nth-child(1),
+div.contents>div.coInfo>section:nth-child(2){
+    
+}
+div.contents>div.coInfo>section:nth-child(odd){
+    margin-right: 10px;
+}
+div.contents>div.coInfo>section:nth-child(even){
+    margin-left: 10px;
+}
+div.contents>div.coInfo>section>a{
+    display: block;
+}
+div.contents>div.coInfo>section>a>div{
+    margin: 0 20px;
+}
+div.contents>div.coInfo>section>a>div>h1{
+    font-size: 24px;
+    background: url(../../imgs/img_menu_more02.png)no-repeat 99% 50%;
+}
+div.contents>div.coInfo>section>a>div>p.txt{
+    height: 46px;
+    font: 14px/23px "Malgun Gothic", sans-serif;
+    letter-spacing: -1px;
+    color: #000;
+}
+div.contents>div.coInfo>section>a>p.pic{
+    margin-top: 11px;
+}
+div.contents>div.coInfo>section>a>p.pic>img{
+    vertical-align: top;
+    width: 100%;
+}
+
+section.etc{
+    overflow: hidden;
+    padding: 0 15px;
+    margin-top: 80px;
+    padding-bottom:100px;
+}
+section.etc>ul{
+    display: flex;
+    width: calc(100% + 50px);
+    justify-content: space-between;
+}
+section.etc>ul>li{
+    flex: 1 0 33.33333333%;/* auto일때만 width값 부여 */
+    box-sizing: border-box;
+    padding-right: 50px;
+    height: 70px;
+}
+section.etc>ul>li:nth-child(2){
+    width: 385px;
+}
+section.etc>ul>li>a{
+    display: flex; align-items: center;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    height: 70px;
+}
+section.etc>ul>li>a>span{
+    margin:0 10px 0 5px;
+    flex: 1 1 auto;
+}
+
+p.dirTop{
+    position: absolute;z-index: 9999;bottom: 20px;right: 0;
+    width: 50px; height: 50px;
+}

@@ -1,0 +1,64 @@
+footer{}
+footer>div.footerTop{
+    height: 50px; background: #000;
+}
+footer>div.footerTop>div{
+    height: 140px;
+}
+footer>div.footerTop>div>dl.utilBtm{
+    display: flex; align-items: center;
+    margin-bottom: 12px;
+    height: 50px;
+}
+footer>div.footerTop>div>dl.utilBtm>dd{
+    position: relative;
+    padding: 0 10px;
+}
+footer>div.footerTop>div>dl.utilBtm>dd:not(:first-of-type)::after{
+    position: absolute; left: 0;top: calc(50% - 7px);
+    border-left: 1px solid #a1a1a1;
+    height: 13px;
+    content: "";
+}
+footer>div.footerTop>div>dl.utilBtm>dd>a{
+    color: #a1a1a1;
+    font:bold 14px/14px "dotum",sans-serif;
+}
+footer>div.footerTop>div>dl.utilBtm>dd.sns{}
+footer>div.footerTop>div>dl.utilBtm>dd.sns>ul{
+    display: flex; align-items: center;
+    height: 55px;
+}
+footer>div.footerTop>div>dl.utilBtm>dd.sns>ul>li{}
+
+.footerBottom{
+    
+}
+.footerBottom img{
+    margin: 10px 10px;
+    width: 140px;
+}
+.footerBottom p{
+    margin: 0 10px;
+    font: 12px/20px sans-serif;
+}
+/* 이벤트 */
+footer>div.footerTop>div>dl.family.on{
+    
+}
+footer>div.footerTop>div>dl.family.on>dt{
+    background: url(../../imgs/family_on.png)no-repeat 95% 50%;
+}
+footer>div.footerTop>div>dl.family.on>dd{
+    display: block;
+}
+footer>div.footerTop>div>dl.family.on>dd>ul>li:hover>a{
+    color: #fff;
+}
+footer>div.footerBottom{
+    height: 102px; background: #fff;
+}
+footer>div.footerBottom>div{
+    margin: 0 auto;
+    width: 1200px;
+}
