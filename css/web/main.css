@@ -44,10 +44,8 @@ main>div{
     right: 0; bottom: 0;
 }
 /* 이벤트 */
-.theme>ul>li:hover>a>img{
-    opacity: 0;
-}
 .theme>ul>li:hover>a>img:nth-child(2){
+    width: 105%;
     opacity: 1;
 }
 

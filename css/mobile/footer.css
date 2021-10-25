@@ -14,7 +14,7 @@ footer>div.footerTop>div>dl.utilBtm>dd{
     position: relative;
     padding: 0 10px;
 }
-footer>div.footerTop>div>dl.utilBtm>dd:not(:first-of-type)::after{
+footer>div.footerTop>div>dl.utilBtm>dd:not(:first-of-type,:last-of-type)::after{
     position: absolute; left: 0;top: calc(50% - 7px);
     border-left: 1px solid #a1a1a1;
     height: 13px;
