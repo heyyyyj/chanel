@@ -16,7 +16,7 @@ footer>div.footerTop>div>dl.utilBtm>dd{
     position: relative;
     padding: 0 10px;
 }
-footer>div.footerTop>div>dl.utilBtm>dd:not(:first-of-type)::after{
+footer>div.footerTop>div>dl.utilBtm>dd:not(:first-of-type,:last-of-type)::after{
     position: absolute; left: 0;top: calc(50% - 7px);
     border-left: 1px solid #a1a1a1;
     height: 13px;
@@ -39,13 +39,13 @@ footer>div.footerTop>div>dl.utilBtm>dd.sns>ul>li{}
     width: 200px;
 }
 .footerBottom p{
-    float: right;
-    margin: 22px 100px;
-    font: 14px/20px sans-serif;
+    float: left;
+    margin: 22px 20px;
+    font: 12px/18px sans-serif;
 }
 /* 이벤트 */
 footer>div.footerBottom{
-    height: 102px; background: #fff;
+    height: 102px;
 }
 footer>div.footerBottom>div{
     margin: 0 auto;

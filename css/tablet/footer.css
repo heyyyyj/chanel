@@ -39,13 +39,10 @@ footer>div.footerTop>div>dl.utilBtm>dd.sns>ul>li{}
     width: 120px;
 }
 .footerBottom p{
-    margin: 30px 10px;
-    font: 12px/20px sans-serif;
+    margin: 20px 10px;
+    font: 12px/18px sans-serif;
 }
 /* 이벤트 */
-footer>div.footerBottom{
-    height: 102px; background: #fff;
-}
 footer>div.footerBottom>div{
     margin: 0 auto;
     width: 1200px;
