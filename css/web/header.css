@@ -174,17 +174,13 @@ header>div.center>div#lang{
     background: url(../../img/country_off.png) no-repeat 50% 90%;
 }
 header>div.center>div#lang.on{
+    overflow:visible;
     background: url(../../img/country_on.png)no-repeat 50% 90%;
 }
 header>div.center>div#lang>dl{
     position: absolute;
-    width: 44px; left: -1px; top: -1px;
-    border-radius: 6px 6px 0 0;
-    
+    width: 44px; left: 0; top: -1px;
     border-bottom: 0 none;
-}
-header>div.center>div#lang>dl>dd:first-of-type{
-    border-radius: 6px 6px 0 0;
 }
 header>div.center>div#lang>dl>dd{
     height: 34px;
@@ -196,4 +192,7 @@ header>div.center>div#lang>dl>dd{
 header>div.center>div#lang>dl>dd.on{
     font-weight: bold;
     background: none;
+}
+header>div.center>div#lang>dl>dd>a{
+    color: #000;
 }

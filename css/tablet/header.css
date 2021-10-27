@@ -336,11 +336,12 @@ header>div>nav>ul>li>ul>li>ul>li:hover>a{
 }
 
 header>div.center>div#lang.on{
+    overflow:visible;
     background: url(../../img/country_on.png)no-repeat 50% 90%;
 }
 header>div.center>div#lang>dl{
     position: absolute;
-    width: 44px; left: -1px; top: -1px;
+    width: 44px; left: 0; top: -1px;
     border-radius: 6px 6px 0 0;
     border-bottom: 1px solid #a9b0b8;
     bottom: 0 none;
@@ -358,4 +359,7 @@ header>div.center>div#lang>dl>dd{
 header>div.center>div#lang>dl>dd.on{
     font-weight: bold;
     background: none;
+}
+header>div.center>div#lang>dl>dd>a{
+    color: #000;
 }

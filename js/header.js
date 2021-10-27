@@ -11,6 +11,8 @@ $(document).ready(function(){
 
     });
 
+    // search
+
     $("#srchBox").click(function(){
 
         $(".srchForm").addClass("active");
@@ -21,4 +23,13 @@ $(document).ready(function(){
         $(".srchForm").removeClass("active");
 
     });
+
+    // lang
+
+    $("#lang").click(function(){
+
+        $("#lang").toggleClass("on");
+
+    });
+
 });
