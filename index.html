@@ -20,6 +20,9 @@
     <link rel="stylesheet" media="only screen and (max-width:640px)" href="css/mobile/main.css">
     <link rel="stylesheet" media="only screen and (max-width:640px)" href="css/mobile/footer.css">
     <link rel="icon" href="./img/32x32.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/header.js" defer></script>
 </head>
 <style>
     html, body {
@@ -36,9 +39,10 @@
                     <img src="./img/logo.jpg" alt="샤넬로고" class="t res">
                 </a>
             </h1>
-            <p class="res t m"><span class="hidden">메뉴 바로가기</span></p>
-            <nav>
+            <p class="res t m btn"><span class="hidden">메뉴 바로가기</span></p>
+            <nav class="toggle_menu">
                 <h1 class="hidden">메인 네비게이터</h1>
+                <p class="res t m toggle_close"><img src="./img/ic_close_search.png" alt=""></p>
                 <ul>
                     <li>
                         <a href="#">패션</a>
@@ -151,10 +155,10 @@
             </nav>
             <div id="srchBox">
                 <button>제품검색</button>
-                <form action="test.jsp">
+                <form action="test.jsp" class="srchForm">
                     <input type="search" placeholder="| 제품명을 입력하세요.">
                     <input type="image" src="./img/ic_search.png" alt="검색">
-                    <p class="close"><img src="./img/ic_close_search.png" alt="닫기"></p>
+                    <p class="srchClose"><img src="./img/ic_close_search.png" alt="닫기"></p>
                 </form>
             </div>
             <div id="lang">
