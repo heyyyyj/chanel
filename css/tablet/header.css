@@ -111,6 +111,12 @@ header{
         text-indent: 10px;
         letter-spacing: -2px; line-height: 36px;
     }
+    .srchForm{
+        display: none;
+        position: absolute;
+        right: -51px;top: 83px;
+        width: 320px; height: 50px; background: #424c51;
+    }
     header>div.center>div#lang{
         position: relative;
         overflow: hidden;
@@ -187,7 +193,8 @@ header{
         margin: 0 1px;
         height: 43px;
     }
-    header>div>nav>ul>li>ul>li:last-child{
+    header>div>nav>ul>li>ul>li.child{
+        background: url(../../img/bu_2depth_on.png) no-repeat 165px 50%;
     }
     header>div>nav>ul>li>ul>li>a{
         display: block;
@@ -195,9 +202,6 @@ header{
         height: 43px;
         color: #000;
         font-size: 14px; line-height: 43px;
-    }
-    header>div>nav>ul>li>ul>li.child{
-        background: url(../../img/bu_2depth_on.png) no-repeat 165px 50%;
     }
     header>div>nav>ul>li>ul>li>ul{
         display: none;
@@ -243,6 +247,12 @@ header{
         letter-spacing: -2px;
         font-size:0;line-height: 0;
         cursor: pointer;
+    }
+    .srchForm{
+        display: none;
+        position: absolute;
+        right: 0;top: 60px;
+        width: 320px; height: 50px; background: #424c51;
     }
     header>div.center>div#lang{
         position: absolute;
@@ -299,12 +309,7 @@ header>div>nav>ul>li>ul>li>ul>li:hover>a{
 
 
 
-.srchForm{
-    display: none;
-    position: absolute;
-    right: -51px;top: 60px; /* right값은 강사님이랑 차이 있음(-48px) */
-    width: 320px; height: 50px; background: #424c51;
-}
+
 .srchForm.active{
     display: block;
 }

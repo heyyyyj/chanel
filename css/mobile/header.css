@@ -82,7 +82,8 @@ header>div>nav>ul>li>ul>li{
     margin: 0 1px;
     height: 43px;
 }
-header>div>nav>ul>li>ul>li:last-child{
+header>div>nav>ul>li>ul>li.child{
+    background: url(../../img/bu_2depth_on.png) no-repeat 165px 50%;
 }
 header>div>nav>ul>li>ul>li>a{
     display: block;
@@ -90,9 +91,6 @@ header>div>nav>ul>li>ul>li>a{
     height: 43px;
     color: #000;
     font-size: 14px; line-height: 43px;
-}
-header>div>nav>ul>li>ul>li.child{
-    background: url(../../img/bu_2depth_on.png) no-repeat 165px 50%;
 }
 header>div>nav>ul>li>ul>li>ul{
     display: none;
@@ -137,6 +135,7 @@ header>div>nav>ul>li>ul>li>ul>li>a::after{
     text-indent:-99999px;
     letter-spacing: -2px;
     font-size:0;line-height: 0;
+    cursor: pointer;
 }
 header>div.center>div#lang{
     position: absolute;
@@ -174,28 +173,31 @@ header>div>nav>ul>li>ul>li>ul>li:hover>a{
     color: #fff;
 }
 
-#srchBox>form{
+.srchForm{
     display: none;
     position: absolute;
-    right: -51px;top: 83px; /* right값은 강사님이랑 차이 있음(-48px) */
+    right: 0;top: 60px; /* right값은 강사님이랑 차이 있음(-48px) */
     width: 320px; height: 50px; background: #424c51;
 }
-#srchBox>form>input[type="search"]{
+.srchForm.active{
+    display: block;
+}
+.srchForm>input[type="search"]{
     float: left; margin: 16px 0 0 20px; border: 0 none; outline: 0 none;
     width: 220px; height: 17px; background: #424c51; 
 }
-#srchBox>form>input[type="search"]::placeholder{
+.srchForm>input[type="search"]::placeholder{
     color: #ebebeb;
 }
-#srchBox>form>input[type="image"]{
+.srchForm>input[type="image"]{
     float: left; margin: 13px 0 0 6px; border: 0 none;
 }
-#srchBox>form>p.close{
+.srchForm>.srchClose{
     position: relative;
     float: right;
     margin: 18px 13px 0 0;
 }
-#srchBox>form>p.close::after{
+.srchForm>.srchClose::after{
     position: absolute; left: -13px; top: -8px;
     content: "";
     width: 0; height: 30px; border-left: 1px solid #858f9a;
