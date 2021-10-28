@@ -13,14 +13,16 @@ $(document).ready(function(){
 
     // search
 
-    $("#srchBox").click(function(){
+    $("#srchBox>button").click(function(){
 
-        $(".srchForm").addClass("active");
+        //$(".srchForm").addClass("active");
+        $(".srchForm").slideToggle(300);
 
     });
     $(".srchClose").click(function(){
-
-        $(".srchForm").removeClass("active");
+        //console.log(1234);
+        //$(".srchForm").removeClass("active");
+        $(".srchForm").slideToggle(300);
 
     });
 

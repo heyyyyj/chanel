@@ -45,10 +45,9 @@ main>div{
 }
 /* 이벤트 */
 .theme>ul>li:hover>a>img:nth-child(1){
-    opacity: 0.5;
+    opacity: 0.3;
 }
 .theme>ul>li:hover>a>img:nth-child(2){
-    
     opacity: 1;
 }
 
