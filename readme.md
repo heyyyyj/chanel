@@ -11,6 +11,9 @@ chanel 사이트 리뉴얼
 - `<header>`의 nav, search, 언어
 - addClass, removeClass, slideToggle, toggleClass
 
+## 배포 방법
+- 호스팅 사이트 Netlify에 GitHub를 연동하여 배포
+
 ## 실행 방법
 - Visual Studio Code 기준
 - index.html 우클릭
