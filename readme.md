@@ -8,7 +8,7 @@ chanel 사이트 리뉴얼
 - 반응형 @media(미디어쿼리)
 
 **Java Script**
-- <header>의 nav, search, 언어
+- `<header>`의 nav, search, 언어
 - addClass, removeClass, slideToggle, toggleClass
 
 ## 실행 방법
