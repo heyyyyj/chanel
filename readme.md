@@ -15,6 +15,7 @@ chanel 사이트 리뉴얼
 
 ## 배포 방법
 - 호스팅 사이트 Netlify에 GitHub를 연동하여 배포
+- https://www.netlify.com/
 
 
 ## 실행 방법
